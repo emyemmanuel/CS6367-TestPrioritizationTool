@@ -22,9 +22,16 @@ Steps to run the tool on joda-time.git is as follows
 
 
 
+
+
+
+
+
+
+
 Here are the changes that should be made to the tool while running on any other example project.
 
-1. Updates made in pom.xml
+A. Updates made in pom.xml
 
 The changes or additions made in the pom.xml are as follows:
 -- First Change
@@ -89,19 +96,19 @@ The changes or additions made in the pom.xml are as follows:
 <systemPath>${basedir}/test-agent.jar</systemPath>
 </dependency>
 
-2. Changes in java file 
-1. Update the class path in MyClassFileTransformer.java and TestJavaAgent.java from "org/joda/time" to the class path of the example project
-2. Update the package details in Listener.java to the package details of he example project
+B. Changes in java file 
+i) Update the class path in MyClassFileTransformer.java and TestJavaAgent.java from "org/joda/time" to the class path of the example project
+ii) Update the package details in Listener.java to the package details of he example project
 
-3. Steps to make a jar file
+C. Steps to make a jar file
 
-1. Compile all the java files using command 
+i) Compile all the java files using command 
 	javac -cp ".;../lib/asm-all-5.0.3.jar" *.java
-2. Consolidate all the class files while mantaining the folder structure in this case 
+ii) Consolidate all the class files while mantaining the folder structure in this case 
 	test->pack
-3. Create manifest.txt containing 
+iii) Create manifest.txt containing 
 	Premain-Class: test.pack.Agent
-4. Run the following command 
+iv) Run the following command 
 	jar -cvfm test-agent.jar manifest.txt test
 
 
