@@ -102,7 +102,7 @@ Steps to make a jar file
 3. Create manifest.txt containing 
 	Premain-Class: test.pack.Agent
 4. Run the following command 
-	jar -cvfm JPAgent.jar manifest.txt test
+	jar -cvfm test-agent.jar manifest.txt test
 
 
 Steps to install maven on mac
