@@ -6,11 +6,7 @@ Dependecies:
 - ASM 5.0.3 for the compilation of JavaAgent.
 - JUnit version 4.11
 
-The example project on which the tool is tested
-
-https://github.com/apache/commons-dbutils.git, 633749db5b0fd25b9a3ca133e7496a353de4fd5d
-
-https://github.com/JodaOrg/joda-time.git, acff94148b2110b95f7aeae6a1bdcafb756061f0
+The example project on which the tool is tested is joda-time which can be found at https://github.com/JodaOrg/joda-time.git, acff94148b2110b95f7aeae6a1bdcafb756061f0
 
 Steps to run the tool on joda-time.git is as follows
 
@@ -26,9 +22,9 @@ Steps to run the tool on joda-time.git is as follows
 
 
 
+Here are the changes that should be made to the tool while running on any other example project.
 
-
-Updates made in pom.xml
+1. Updates made in pom.xml
 
 The changes or additions made in the pom.xml are as follows:
 -- First Change
@@ -93,7 +89,11 @@ The changes or additions made in the pom.xml are as follows:
 <systemPath>${basedir}/test-agent.jar</systemPath>
 </dependency>
 
-Steps to make a jar file
+2. Changes in java file 
+1. Update the class path in MyClassFileTransformer.java and TestJavaAgent.java from "org/joda/time" to the class path of the example project
+2. Update the package details in Listener.java to the package details of he example project
+
+3. Steps to make a jar file
 
 1. Compile all the java files using command 
 	javac -cp ".;../lib/asm-all-5.0.3.jar" *.java
