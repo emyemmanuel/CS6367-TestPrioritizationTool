@@ -14,9 +14,9 @@ https://github.com/JodaOrg/joda-time.git, acff94148b2110b95f7aeae6a1bdcafb756061
 
 Steps to run the tool on joda-time.git is as follows
 
-1. Update the pom.xml with the pom.xml uploaded in the repository (see below for changes made in pom.xml)
+1. Update the pom.xml of the example project with the pom.xml uploaded in the repository (https://github.com/emyemmanuel/CS6367-TestPrioritizationTool/blob/master/pom.xml) (see below for changes made in pom.xml)
 
-2. Add Listener.java to the example project so that the path of listener is  ~/joda-time/src/test/java/org/joda/time/Listener.java
+2. Add Listener.java (https://github.com/emyemmanuel/CS6367-TestPrioritizationTool/blob/master/Listener.java) to the example project so that the path of listener is  ~/joda-time/src/test/java/org/joda/time/Listener.java
 
 3. Add the test-agent.jar to the example project so that the path is ~/joda-time/test-agent.jar (Steps to make jar is mentioned below)
 
