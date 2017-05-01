@@ -48,38 +48,7 @@ public class Listener extends RunListener {
 
 	public void testRunFinished(Result result) throws ClassNotFoundException
     {
-        List<String> fileOutput1 = StatementCoverageData.writeTotalIntoFile();
-        startTime = System.currentTimeMillis();
-        System.out.println("\n*******************************************");
-        System.out.println("\nStarting Total Prioritization Test Execution at "+startTime+" ms");
-        for (String item1 : fileOutput1)
-        {
-            //System.out.println(item1);
-
-            Result result1 = org.junit.runner.JUnitCore.runClasses(Class.forName(item1));
-            for (Failure failure : result1.getFailures()) {
-                if(failure.toString().contains("warning")){}
-                else
-                    System.out.println("Test failed in : " + (System.currentTimeMillis() - startTime));
-            }        }
-        System.out.println("Ending Total Prioritization Test Execution");
-        System.out.println("*******************************************");
-
-		List<String> fileOutput2 = StatementCoverageData.writeAdditionalIntoFile();
-        startTime = System.currentTimeMillis();
-        System.out.println("\n*******************************************");
-        System.out.println("\nStarting Additional Prioritization Test Execution at "+startTime+" ms");
-        for (String item2 : fileOutput2)
-        {
-			Result result2 = org.junit.runner.JUnitCore.runClasses(Class.forName(item2));
-            for (Failure failure : result2.getFailures()) {
-                if(failure.toString().contains("warning")){}
-                else
-                    System.out.println("Test failed in : " + (System.currentTimeMillis() - startTime));
-            }
-        }
-        System.out.println("Ending Additional Prioritization Test Execution");
-        System.out.println("*******************************************");
+        
 	}
 
 	@Override
