@@ -1,6 +1,10 @@
 # CS6367-TestPrioritizationTool
 Test Prioritization Tool
-The test prioritization tool enables optimization to select and prioritize tests for applications. The tool developed includes the total and additional test prioritization strategies.
+The test prioritization tool enables optimization to select and prioritize tests for applications. The tool developed includes the total and additional test prioritization strategies. 
+
+Dependecies:
+- ASM 5.0.3 for the compilation of JavaAgent.
+- JUnit version 4.11
 
 The example project on which the tool is tested
 
@@ -91,3 +95,7 @@ The changes or additions made in the pom.xml are as follows:
 </dependencies>
 
 Steps to make a jar file
+
+
+Steps to install maven on mac
+http://toolsqa.com/java/maven/how-to-install-maven-on-mac/
