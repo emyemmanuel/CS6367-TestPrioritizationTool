@@ -92,7 +92,6 @@ The changes or additions made in the pom.xml are as follows:
  <scope>system</scope>
 <systemPath>${basedir}/test-agent.jar</systemPath>
 </dependency>
-</dependencies>
 
 Steps to make a jar file
 
