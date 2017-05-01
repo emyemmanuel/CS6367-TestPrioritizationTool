@@ -96,6 +96,15 @@ The changes or additions made in the pom.xml are as follows:
 
 Steps to make a jar file
 
+1. Compile all the java files using command 
+	javac -cp ".;../lib/asm-all-5.0.3.jar" *.java
+2. Consolidate all the class files while mantaining the folder structure in this case 
+	test->pack
+3. Create manifest.txt containing 
+	Premain-Class: test.pack.Agent
+4. Run the following command 
+	jar -cvfm JPAgent.jar manifest.txt test
+
 
 Steps to install maven on mac
 http://toolsqa.com/java/maven/how-to-install-maven-on-mac/
