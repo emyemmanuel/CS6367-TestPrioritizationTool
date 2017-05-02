@@ -14,13 +14,13 @@ Steps to run the tool on joda-time.git is as follows
 
 2. Add Listener.java (https://github.com/emyemmanuel/CS6367-TestPrioritizationTool/blob/master/Listener.java) to the example project so that the path of listener is  ~/joda-time/src/test/java/org/joda/time/Listener.java
 
-3. Add the test-agent.jar to the example project so that the path is ~/joda-time/test-agent.jar (Steps to make jar is mentioned below)
+3. Add the test-agent.jar (https://github.com/emyemmanuel/CS6367-TestPrioritizationTool/blob/master/test-agent.jar) to the example project so that the path is ~/joda-time/test-agent.jar (Steps to make jar is mentioned below)
 
 4. Once the Listener.java and test-agent.jar are added to joda-time use the command $ mvn test  to run the tool. Make sure the Maven path and environment variables are aready set before running this command
 
 5. The output will first run the TestClasses without any prioritization, followed by total test prioritization and finally additional test prioritization of the TestClasses
 
-
+6. Example output files are added in the repository (Folder: SampleOutput) to show the execution order of the test classes in total and additional strategies.
 
 
 
